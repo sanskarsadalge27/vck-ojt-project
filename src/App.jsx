@@ -1,9 +1,10 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import CoursesPage from './pages/CoursesPage';
 import AdmissionsPage from './pages/AdmissionPage';
 import ConatactPage from './pages/ConatactPage';
+import HomePage from './pages/Homepage';
+import ChatbotComponent from './components/Chatbot/ChatbotComponent';
 const App = () => {
 
   return (
@@ -15,7 +16,9 @@ const App = () => {
         <Route path='/courses' element={<CoursesPage/>}/>
         <Route path='/contact' element={<ConatactPage/>}/>
         <Route path='/Admission' element={<AdmissionsPage/>}/>
-      </Routes> 
+      </Routes>
+      <ChatbotComponent/>
+       
     </BrowserRouter>
   </div>
 )
